@@ -1,5 +1,19 @@
-%div.row.welcome
-  %p.doc
+= partial("header")
+
+%div.row.media-kit-main
+  %div.large-3.columns
+    %h3 Media Info
+  %div.large-9.columns
+    %h3 Media Contact
+    %p.address
+      [Someone Really] 
+    %p.address
+      19 N Sangamon St
+    %p.address
+      Chicago Il, 60607
+    %hr
     - load_images.each do |file|
       = image_tag image_path(file)
+    %hr
+
 = partial("footer")

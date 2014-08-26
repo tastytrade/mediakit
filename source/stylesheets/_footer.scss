@@ -1,0 +1,11 @@
+.footer-format {
+  height: $footer-height;
+  background-color: $dark-gray;
+  & ul {
+    @include vertical-align($footer-height);
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
