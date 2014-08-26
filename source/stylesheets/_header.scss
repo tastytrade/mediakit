@@ -1,9 +1,12 @@
 .header {
   height: $header-height;
   background-color: $dough-orange;
-  color: white;
+  font-size: 20px;
   & > * {
     @include vertical-align($header-height);
+  }
+  a {
+    color: white;
   }
 }
 

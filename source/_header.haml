@@ -1,12 +1,19 @@
 %div.header
   %div.logo.large-3.columns
-    %img{src: "https://s3.amazonaws.com/www.dough.com/sites/52f1bbab741206fd0d000002/theme/images/dough-sm-white.svg", class: "dough-logo" }
+    %a{href: "https://www.dough.com/" }
+      %img{src: "https://s3.amazonaws.com/www.dough.com/sites/52f1bbab741206fd0d000002/theme/images/dough-sm-white.svg", class: "dough-logo" }
   %ul.inline-list.large-6.columns
-    %li what is dough?
-    %li meet the traders
-    %li contact us
-    %li in the news
-    %li blog
+    %li 
+      = link_to "what is dough?", "https://www.dough.com/#about"
+    %li 
+      = link_to "meet the traders", "https://www.dough.com/#traders"
+    %li
+      = link_to "contact us", "https://www.dough.com/#contact"
+    %li 
+      = link_to "in the news", "https://www.dough.com/#news"
+    %li
+      = link_to "blog", "https://www.dough.com/#posts"
   %ul.inline-list.large-3.columns
-    %li media info
+    %li
+      = link_to "media info", "http://mediakit.dough.com"
 
