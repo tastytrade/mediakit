@@ -76,6 +76,9 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-pry (0.0.3)
+      middleman-core (>= 3.2.2)
+      pry (>= 0.9.12)
     middleman-sprockets (3.3.9)
       middleman-core (~> 3.3)
       sprockets (~> 2.12.1)
@@ -89,7 +92,7 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.3)
       activesupport (>= 3.1)
-    pry (0.10.0)
+    pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -102,7 +105,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     sass (3.4.1)
-    slop (3.5.0)
+    slop (3.6.0)
     sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -128,8 +131,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   middleman (~> 3.3.5)
   middleman-livereload (~> 3.1.0)
-  pry
+  middleman-pry
   tzinfo-data
   wdm (~> 0.1.0)

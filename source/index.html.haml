@@ -1,0 +1,4 @@
+%div.welcome
+  %p.doc
+    - load_images.each do |file|
+      = image_tag image_url(file)
