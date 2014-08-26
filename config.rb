@@ -53,6 +53,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :haml, :format => :html5
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -69,31 +71,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-# Used for generating absolute URLs
-set :protocol, "http://"
-set :host, "example.com"
-set :port, 80
-
-helpers do
-
-  def host_with_port
-    [host, optional_port].compact.join(':')
-  end
-
-  def optional_port
-    port unless port.to_i == 80
-  end
-
-  def image_url(source)
-    protocol + host_with_port + image_path(source)
-  end
-
-end
-
-configure :development do
-  # Used for generating absolute URLs
-  set :host, Middleman::PreviewServer.host
-  set :port, Middleman::PreviewServer.port
 end
