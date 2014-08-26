@@ -12,8 +12,22 @@
     %p.address
       Chicago Il, 60607
     %hr
-    - load_images.each do |file|
-      = image_tag image_path(file)
+      %h3 Photos
+      - load_images.each do |file|
+        %div.large-3.columns
+          = image_tag image_path(file), :class => "main-body-image"
     %hr
+      %div.row
+        %div.large-3.columns
+          = image_tag image_path("headshots/headshot_tom_circle.png")
+        %div.large-9.columns
+          %h3 Tom Sosnoff
+          %p Lorem ipsum text
+      %div.row.lower-profile
+        %div.large-3.columns
+          = image_tag image_path("headshots/headshot_kristi_circle.png")
+        %div.large-9.columns
+          %h3 Kristi Ross
+          %p Lorem ipsum text
 
 = partial("footer")

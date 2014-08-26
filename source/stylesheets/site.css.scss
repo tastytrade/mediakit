@@ -1,6 +1,7 @@
 // Global Foundation Settings
 @import "colors";
 @import "variables";
+@import "fonts";
 @import "settings";
 
 // Comment out this import if you don't want to use normalize
@@ -13,6 +14,7 @@
 @import "header";
 @import "footer";
 @import "main";
+
 
 
 // Import specific parts of Foundation by commenting the import "foundation"
