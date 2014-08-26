@@ -1,0 +1,17 @@
+---
+title: Welcome to Middleman
+---
+
+<div class="welcome">
+  <h1>Middleman is Watching</h1>
+  <p class="doc">
+    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+    <p> TITTIES </p>
+    <% load_images %>
+    <% images.each do |file| %>
+      <% binding.pry %>
+      <%= image_url(file) %>
+    <% end %>
+    <%= image_tag image_url("middleman.png") %>
+  </p><!-- .doc -->
+</div><!-- .welcome -->
