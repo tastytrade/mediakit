@@ -1,4 +1,5 @@
-%div.welcome
+%div.row.welcome
   %p.doc
     - load_images.each do |file|
       = image_tag image_path(file)
+= partial("footer")
